@@ -8,6 +8,11 @@
  * @return {number[]}
  */
 var plusOne = function(digits) {
-  digits[digits.length - 1] = Number(digits[digits.length - 1]) + 1
+  var num = Number(digits.slice(-1)) + 1
+  if (num > 9) {
+    console.log(num)
+  }else {
+    digits[digits.length -1] = num
+  }
   return digits
 };
